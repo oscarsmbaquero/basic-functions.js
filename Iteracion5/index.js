@@ -5,24 +5,25 @@ cuente la longitud del string y lo sume.
 Puedes usar este array para probar tu función:*/
 
 const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
+
+
 const averageWord = (list) => {
-    let acc = 0;
+    let acm = 0;
   
   list.forEach((element) => {
     
     // console.log(element);
     if(typeof element === 'number'){
-        // console.log(element);
-        acc += element;
-    } else {
-
-        acc += element.lenght;
-        // console.log(element.length);
-    }
- 
+        console.log(element);
+        acm += element;
+     }else {
+        console.log(element.length);
+        acm += element.lenght;
+     }
+    
 });
- return acc;
-}
+   return acm;
 
+}
 const result = averageWord(mixedElements);
 console.log(result);
